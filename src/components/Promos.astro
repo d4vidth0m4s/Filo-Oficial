@@ -28,7 +28,11 @@
     </button>
     <button class="redirect">
       <div class="img-redirect">
-        <img src="imgs/istockphoto-104704117-612x612.jpg" alt="" />
+        <img
+          class="img-center"
+          src="imgs/istockphoto-104704117-612x612.jpg"
+          alt=""
+        />
       </div>
       <div class="info-redirect">
         <div class="info-text">
@@ -65,6 +69,7 @@
 
   .icono-promo {
     width: 100%;
+    height: 150px;
     background: linear-gradient(135deg, #00c853 30%, #7cff6b 60%, #b2ff59 100%);
     border-radius: 20px;
     margin: 10px;
@@ -83,8 +88,12 @@
   .pro-text {
     color: white;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     font-size: 16px;
     padding: 0 0 12px;
+    position: relative;
+    top: -70px;
   }
 
   .populares h2 {
@@ -96,13 +105,15 @@
     gap: 20px;
     max-width: 900px;
     width: 100%;
-    margin: 10px auto;
+    height: auto;
+    margin: auto;
     padding: 20px;
   }
 
   .redirect {
     width: 100%;
-    height: 100%;
+    max-width: 280px;
+    height: auto;
     background: linear-gradient(to bottom, #00c853, #b2ff59);
     border: none;
     border-radius: 20px;
@@ -129,11 +140,27 @@
     padding-bottom: 20px;
   }
 
-  .img-redirect img {
+  .img-redirect {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     width: 100%;
     height: 100%;
+    overflow: hidden;
+  }
+  .img-redirect img {
+    width: 100%;
+    height: auto;
     border-radius: 20px;
     max-width: 280px;
     min-width: 280px;
+  }
+  .img-center {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
   }
 </style>
