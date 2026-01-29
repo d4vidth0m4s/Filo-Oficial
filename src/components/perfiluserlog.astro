@@ -7,7 +7,11 @@
 
 <section class="perfil-card">
     <div class="avatar">
-        <i class="fa-solid fa-user"></i>
+        <img
+            class="Foto-perfil"
+            src="/imgs/userPhoto.jpg"
+            alt="Foto de perfil"
+        />
     </div>
     <h3>Usuario</h3>
     <p class="correo">usuario@email.com</p>
@@ -73,16 +77,21 @@
     }
 
     .avatar {
-        width: 80px;
-        height: 80px;
+        width: 150px;
+        height: 150px;
         background: #1fd15f;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 0 auto 10px;
-        color: white;
         font-size: 30px;
+    }
+    .Foto-perfil {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
     }
 
     .correo {
