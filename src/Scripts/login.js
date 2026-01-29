@@ -1,10 +1,10 @@
 
-  document.getElementById("userBtn").addEventListener("click", () => {
-    const logueado = false;
+document.getElementById("userBtn").addEventListener("click", () => {
+  const logueado = true;
 
-    if (logueado) {
-      window.location.href = "src/components/UserCall.astro";
-    } else {
-      window.location.href = "src/components/UserCall.astro";
-    }
-  });
+  if (logueado) {
+    window.location.href = "/users/userPerfil";
+  } else {
+    window.location.href = "/users/userLog";
+  }
+});

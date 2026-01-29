@@ -1,0 +1,128 @@
+<header class="perfil-header">
+    <button id="back" type="button" class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+    </button>
+    <h2>Mi perfil</h2>
+</header>
+
+<section class="perfil-card">
+    <div class="avatar">
+        <i class="fa-solid fa-user"></i>
+    </div>
+    <h3>Usuario</h3>
+    <p class="correo">usuario@email.com</p>
+</section>
+
+<section class="perfil-opciones">
+    <button class="opcion">
+        <i class="fa-solid fa-clipboard-list"></i>
+        <span>Mis pedidos</span>
+    </button>
+
+    <button class="opcion">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Direcciones</span>
+    </button>
+
+    <button class="opcion">
+        <i class="fa-solid fa-gear"></i>
+        <span>Configuración</span>
+    </button>
+
+    <button class="opcion logout">
+        <i class="fa-solid fa-right-from-bracket"></i>
+        <span>Cerrar sesión</span>
+    </button>
+</section>
+<script src="../Scripts/userPerfil.js"></script>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: #f4f4f4;
+    }
+
+    .perfil-header {
+        background: #1fd15f;
+        color: white;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .back-btn {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .perfil-card {
+        background: white;
+        margin: 20px;
+        padding: 25px;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .avatar {
+        width: 80px;
+        height: 80px;
+        background: #1fd15f;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 10px;
+        color: white;
+        font-size: 30px;
+    }
+
+    .correo {
+        color: #777;
+        font-size: 14px;
+    }
+
+    .perfil-opciones {
+        background: white;
+        margin: 20px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .opcion {
+        width: 100%;
+        padding: 15px 20px;
+        border: none;
+        background: white;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 16px;
+        cursor: pointer;
+        border-bottom: 1px solid #eee;
+    }
+
+    .opcion i {
+        color: #1fd15f;
+    }
+
+    .opcion:hover {
+        background: #f9f9f9;
+    }
+
+    .logout {
+        color: red;
+    }
+
+    .logout i {
+        color: red;
+    }
+</style>
