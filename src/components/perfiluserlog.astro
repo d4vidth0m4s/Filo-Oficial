@@ -24,8 +24,8 @@
     </button>
 
     <button class="opcion">
-        <i class="fa-solid fa-location-dot"></i>
-        <span>Direcciones</span>
+        <i class="fa-solid fa-heart"></i>
+        <span>Favoritos</span>
     </button>
 
     <button class="opcion">
@@ -38,7 +38,9 @@
         <span>Cerrar sesión</span>
     </button>
 </section>
+<script is:inline src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="../Scripts/userPerfil.js"></script>
+<script src="../Scripts/back.js"></script>
 <style>
     * {
         box-sizing: border-box;
@@ -57,12 +59,20 @@
     }
 
     .perfil-header {
-        background: #1fd15f;
+        width: 100%;
+        margin: -10px;
+        background: linear-gradient(
+            135deg,
+            #00c853 30%,
+            #7cff6b 60%,
+            #b2ff59 100%
+        );
         color: white;
-        padding: 15px;
+        padding: 20px;
         display: flex;
         align-items: center;
         gap: 15px;
+        border-radius: 0 0 10px 10px;
     }
 
     .back-btn {
@@ -74,7 +84,7 @@
     }
 
     .perfil-card {
-        background: white;
+        background: linear-gradient(to bottom, #00c853, #b2ff59);
         margin: 20px;
         padding: 25px;
         border-radius: 15px;
@@ -105,6 +115,7 @@
     }
 
     .perfil-opciones {
+        display: flex;
         background: white;
         margin: 20px;
         border-radius: 15px;
@@ -138,5 +149,9 @@
 
     .logout i {
         color: red;
+    }
+
+    .swal2-popup {
+        font-family: "Poppins", sans-serif !important;
     }
 </style>

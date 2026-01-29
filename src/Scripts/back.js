@@ -5,7 +5,7 @@ if (backBtn) {
         if (document.referrer) {
             window.history.back();
         } else {
-            window.location.href = "../../pages/index";
+            window.location.href = "/pages/index";
         }
     });
 }
