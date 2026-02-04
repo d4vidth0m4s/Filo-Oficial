@@ -1,0 +1,79 @@
+---
+
+//test 
+const categorias = [
+  {
+    titulo: "Comida Rápida",
+    descripcion: "Comidas rápidas",
+    imagen: "/imgs/istockphoto-1461350378-612x612.jpg",
+    imagenClass: ""
+  },
+  {
+    titulo: "Restaurantes",
+    descripcion: "Restaurantes",
+    imagen: "/imgs/istockphoto-104704117-612x612.jpg",
+    imagenClass: "img-center"
+  },
+  {
+    titulo: "Supermercados",
+    descripcion: "Supermercados",
+    imagen: "/imgs/Supermercado-carrito.jpg",
+    imagenClass: ""
+  },
+  {
+    titulo: "Cebolleros",
+    descripcion: "Perros calientes",
+    imagen: "/imgs/Supermercado-carrito.jpg",
+    imagenClass: ""
+  },
+  {
+    titulo: "Demoradas Dinámicas",
+    descripcion: "Comidas demoradas",
+    imagen: "/imgs/Supermercado-carrito.jpg",
+    imagenClass: ""
+  },
+  {
+    titulo: "Gordo Burguez",
+    descripcion: "Salchipapas",
+    imagen: "/imgs/Supermercado-carrito.jpg",
+    imagenClass: ""
+  }
+];
+---
+
+<div class="contenido">
+  <div class="populares">
+    <h2>Populares cerca de ti</h2>
+  </div>
+  <div class="icon-populares">
+    {categorias.map((categoria) => (
+      <button class="redirect">
+        <div class="img-redirect">
+          <img 
+            src={categoria.imagen} 
+            alt={categoria.titulo}
+            class={categoria.imagenClass}
+          />
+        </div>
+        <div class="info-redirect">
+          <div class="info-text">
+            <h3>{categoria.titulo}</h3>
+            <p>{categoria.descripcion}</p>
+          </div>
+          <div class="info-icon">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </button>
+    ))}
+  </div>
+</div>
+
+
+
+
+
+
+
+
+

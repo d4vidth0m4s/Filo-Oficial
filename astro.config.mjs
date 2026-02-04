@@ -1,8 +1,16 @@
-// @ts-check
-import { defineConfig } from 'astro/config';
+// astro.config.mjs
+import { defineConfig } from "astro/config";
 
 export default defineConfig({
-  devToolbar: {
-    enabled: false,
+  vite: {
+    clearScreen: false,
+    server: {
+      watch: {
+        usePolling: true,
+      },
+      hmr: {
+        overlay: true,
+      },
+    },
   },
 });

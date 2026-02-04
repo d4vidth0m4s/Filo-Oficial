@@ -1,0 +1,132 @@
+/* Layout principal */
+main {
+  padding-bottom: 80px;
+}
+
+/* Header */
+.header {
+  padding: 15px;
+  background: #00c853;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.header-left h1 {
+  color: #f0f0f0;
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.ubicacion {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #f0f0f0;
+  font-size: 14px;
+}
+
+.header-right {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-btn {
+  text-decoration: none;
+  color: black;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.search-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.menu-btn {
+  background: #f0f0f0;
+  border: none;
+  border-radius: 12px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.search-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: #f0f0f0;
+  border-radius: 12px;
+  padding: 0 15px;
+}
+
+.search-icon {
+  color: #999;
+  margin-right: 10px;
+}
+
+.search-container input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  padding: 12px 0;
+}
+
+/* Footer */
+footer {
+  background: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.footer-content a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #555;
+  font-size: 12px;
+}
+
+.footer-content i {
+  font-size: 20px;
+}
+
+/* Botón de volver genérico */
+.back-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}

@@ -1,5 +1,17 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import AppLayout from "../layouts/AppLayout.astro";
+import Categorias from "../components/home/Categorias.astro";
+import Promos from "../components/home/Promos.astro";
+import Populares from "../components/home/populares.astro";
 ---
 
-<Layout />
+<AppLayout
+  title="Filo"
+  showHeader
+  showFooter
+  styles={["/assets/styles/home.css"]}
+>
+  <Categorias />
+  <Promos />
+  <Populares />
+</AppLayout>

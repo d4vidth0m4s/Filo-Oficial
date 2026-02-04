@@ -1,0 +1,59 @@
+---
+  import Header from "../components/layout/Header.astro";
+  import Footer from "../components/layout/Footer.astro";
+
+
+  interface LayoutProps {
+  title?: string;
+  showHeader?: boolean;
+  showFooter?: boolean;
+  styles?: string[];
+  scripts?: string[];
+}
+
+const {
+  title = "Filo",
+  showHeader = false,
+  showFooter = false,
+  styles = [],
+  scripts = [],
+}: LayoutProps = Astro.props;
+
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>{title}</title>
+
+  <link rel="stylesheet" href="/assets/styles/base.css" />
+  <link rel="stylesheet" href="/assets/styles/layout.css" />
+
+  {styles.map(style => (
+    <link rel="stylesheet" href={style} />
+  ))}
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  {showHeader && <Header />}
+
+  <main>
+    <slot />
+  </main>
+
+  {showFooter && <Footer />}
+
+  <script src="/scripts/navigation.js" defer></script>
+
+  {scripts.map(script => (
+    <script src={script} defer></script>
+  ))} 
+
+</body>
+</html>

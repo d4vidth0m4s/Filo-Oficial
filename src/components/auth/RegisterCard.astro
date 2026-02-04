@@ -1,0 +1,37 @@
+---
+import BackButton from "../ui/BackButton.astro";
+---
+
+<div class="login-container">
+  <BackButton />
+  <h1>Filo</h1>
+  <p>Regístrate para continuar</p>
+
+  <form id="registerForm">
+    <div class="input-group">
+      <i class="fa-solid fa-users"></i>
+      <input type="text" placeholder="Usuario" required />
+    </div>
+    <div class="input-group">
+      <i class="fa-solid fa-envelope"></i>
+      <input type="email" placeholder="Correo electrónico" required />
+    </div>
+
+    <div class="input-group">
+      <i class="fa-solid fa-lock"></i>
+      <input type="password" placeholder="Contraseña" required />
+    </div>
+    <div class="input-group">
+      <i class="fa-solid fa-lock"></i>
+      <input type="password" placeholder="Confirmar contraseña" required />
+    </div>
+
+    <button type="submit">Registrarse</button>
+  </form>
+  <p>O</p>
+  <div class="Google">
+    <button class="google-btn" onclick="loginGoogle()">
+      <img src="/assets/imgs/SVG/google.SVG" alt="Google" />
+    </button>
+  </div>
+</div>
